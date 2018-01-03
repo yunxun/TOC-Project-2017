@@ -18,7 +18,7 @@ machine = TocMachine(
         'user',     #initial,hello
         'state1',   #nap   
         'state2',   #hungry
-		'state3',   #happy
+	'state3',   #happy
         'state4',   #bored
         'state5'    #angry
 
@@ -65,9 +65,12 @@ machine = TocMachine(
 
         {
             'trigger': 'go_back',
-            'source': [
+            'source': [  
                 'state1',
-                'state2'
+                'state2',
+		'state3', 
+		'state4', 
+        	'state5' 
             ],
             'dest': 'user'
         }
